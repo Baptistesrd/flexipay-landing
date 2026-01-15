@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Flexipay — Payez en 2x, boostez vos conversions",
+  title: "Flexipay",
   description:
-    "Flexipay ajoute le paiement en 2 fois à votre checkout en quelques minutes. Widget intégrable, prélèvement automatique, reporting marchand.",
+    "Flexipay adds two-part payment to your checkout in just a few minutes. Integrated widget, direct debit, merchant reporting.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
