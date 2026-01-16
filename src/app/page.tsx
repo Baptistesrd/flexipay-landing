@@ -192,13 +192,14 @@ export default function Page() {
 
             <div className="flex flex-col gap-3 sm:flex-row md:justify-end">
               <a
-                href={DEMO_IFRAME_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white hover:opacity-90"
-              >
-                Jump to live demo →
-              </a>
+  href={DEMO_IFRAME_URL}
+  target="_blank"
+  rel="noreferrer"
+  className="rounded-2xl bg-black px-6 py-3 text-sm font-medium text-white hover:opacity-90"
+>
+  Open live demo →
+</a>
+
               {/* ✅ Scroll fluide vers la démo intégrée */}
 
             </div>
@@ -282,14 +283,15 @@ export default function Page() {
           </div>
 
           {/* Embed area */}
-          <div className="relative">
-            <iframe
-              key={demoKey}
-              src={DEMO_IFRAME_URL}
-              className="h-[560px] w-full"
-              title="Flexipay demo"
-              onLoad={() => setDemoLoading(false)}
-            />
+          <div className="relative hidden md:block">
+  <iframe
+    key={demoKey}
+    src={DEMO_IFRAME_URL}
+    className="h-[560px] w-full"
+    title="Flexipay demo"
+    onLoad={() => setDemoLoading(false)}
+  />
+
 
             {demoLoading && (
               <div className="pointer-events-none absolute inset-0 grid place-items-center bg-white/70 backdrop-blur">
